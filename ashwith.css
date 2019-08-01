@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,800);
+
+.top{
+  font-size: 80px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.top2{
+  color: grey;  
+  font-size: 30px;
+  padding-left: 10px;
+  font-family: 'Inconsolata', serif;
+}
+.top3{
+  color: grey;  
+  font-size: 20px;
+  
+  font-family: 'Inconsolata', serif;
+}
+.headshot{
+  width: 400px;
+  height: 500px;
+  border-radius: 2000px;
+  }
+.heading{
+  padding-top: 30px;
+  padding-bottom: 10px;  
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.about{
+  font-size: 28px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  
+}
+.project{
+  padding-bottom: 20px;  
+}
+#projects{
+  width: 275px;
+  height: 200px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.edImg{
+  width: 200px;
+  height: 200px;
+}
+.edu{
+  font-size: 18px;  
+  padding-right: 10px;  
+  color: grey;
+}
+.edu1{
+  font-size: 18px;
+  padding-bottom: 0;
+  padding-top: 10px;
+  font-style: italic;
+  color: grey;
+}
+.uda{
+  padding-right: 20px;
+}
+.pro{
+  padding-left: 40px;  
+}
+.icon{ 
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+}
+.icon-group{
+  padding-top: 20px;
+  padding-left: 450px;
+ 
+}
+.pro-heading{
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
