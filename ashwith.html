@@ -1,4 +1,4 @@
- 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,554 +6,210 @@
 <meta charset="UTF-8">
 <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<title>ASHWITH PINTO</title>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+<title>CodePen - Resume</title>
 <style>
-    /* Start Main Rules */
-@import url('https://fonts.googleapis.com/css?family=Lato');
+    /* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
 
-body{
-    font-family:"Lato",sans-serif;
-    height:4000px;
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
 }
-
-.container{
-    width:1170px;/*for medium size screens*/
-    margin:auto;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
-
-.clearfix{
-    clear:both;
-}
-
-/* End Main Rules */
-
-/* Start Header */
-
-/* Start Slider */
-
-.header .slider {
-  background:url("https://wallpaperscraft.com/image/ipad_iphone_pens_notepads_coffee_starbucks_83901_1280x900.jpg") no-repeat center center;
-    -webkit-background-size:cover;/* CSS3 */
-    -moz-background-size:cover;/* CSS3 */
-    -o-background-size:cover;/* CSS3 */
-    padding-top:250px;
-    padding-bottom:250px;
-    color:white;
-    text-transform:uppercase;
-    text-align:center;
-}
-
-.header .slider h1{
-    font-size:3em;
+body {
+    font-family: 'Spectral', serif;
+    /*font-family: 'Amatic SC', cursive;*/
     margin:0;
-    display:inline-block;
-    padding-top:10px;
-    padding-bottom:10px;
-    border-top:3px solid white;
-    border-bottom:3px solid white;
 }
 
-.header .slider a{
-    display:block;
-    padding:10px 20px;
-    border:3px solid white;
-    width:140px;
-    margin:40px auto 0;
-    font-size:1.2em;
+a {
+	color:#EF233C;
 }
 
-.header .slider a:active{position:relative;top:1px}
-/* End Slider */
-
-/* Start NavBar */
-.header .navbar {
-    background-color:#252F31;
-    color:white;
-    text-transform:uppercase;
-}
-
-.header .navbar h2:first-of-type{
-    background-color:#4A4F53;
-    padding:0 10px;
-    margin-right: 20px;
-}
-.header .navbar h2{ float:left}
-
-.header .navbar h2 span{color:#3FC177;}
-
-.header .navbar ul{
-    list-style-type:none;
-    float:right;
-}
-
-.header .navbar ul li{
-    float:left;
-    padding:10px;
-    font-weight:bold;
-}
-
-.header .navbar ul li:last-child{padding-right:0}
-
-.header a{color:white;text-decoration:none}
-
-.header .navbar a:hover,
-.header .navbar ul li.active a{color:#3FC177;}
-
-.header .navbar::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both
-}
-/* End NavBar */
-/* End Header */
-
-/* Start Features */
-.features {
-    padding-top:40px;
-    padding-bottom:50px;    
-}
-.features .feat{
-    float:left;
-    width:31.33333%;
-    margin-right:3%;
-}
-
-.features .container div:last-child{margin-right:0;}
-
-.features::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both;
-}
-/* End Features */
-
-/* Start About Me */
-
-.about-me  {
-    background-color:#F2F2F2;
-}
-
-.about-me .image{
-    background:url('https://wallpaperscraft.com/image/macaulay_culkin_actor_star_musician_rock_92893_2820x1920.jpg') no-repeat;
-    width:40%;
-    height:735px;
-    background-size:cover;
-    float:left;
-}
-
-.about-me .info{
-    width:55%;
-    float:left;
-    margin-left:5%;
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-.about-me .info .work-field > div{
-    width:40%;
-    float:left;
-    margin-left:60px;
-    position:relative
-}
-
-.about-me .info .work-field > div .icon{
-    width:35px;
-    height:35px;
-    position:absolute;
-    top:20px;
-    left:-50px;
-}
-
-.about-me .info .work-field >div:nth-child(1) .icon{  
-    background:url("https://cdn3.iconfinder.com/data/icons/faticons/32/globe-01-128.png");
-    background-size:cover; 
-}
-
-.about-me .info .work-field >div:nth-child(2) .icon{  
-    background:url("https://cdn4.iconfinder.com/data/icons/developer-set-3/128/edit-128.png");
-    background-size:cover; 
-}
-
-.about-me .info .work-field >div:nth-child(3) .icon{  
-    background:url("https://cdn0.iconfinder.com/data/icons/news-and-magazine/512/statistic-128.png");
-    background-size:cover; 
-}
-
-.about-me .info .work-field >div:last-child .icon{  
-    background:url("https://cdn4.iconfinder.com/data/icons/thefreeforty/30/thefreeforty_target-128.png");
-    background-size:cover; 
-}
-
-
-/* ClearFix Of The fields floating */
-.about-me .info .work-field::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both;
-}
-
-/* Clear Fix Of The image and info floating*/
-.about-me::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both;
-}
-/* End About Me */
-
-
-/* Start My Skills*/
-.my-skills{
-    padding-top:30px;
-    padding-bottom:50px;
-}
-
-.my-skills .skills,
-.my-skills .progress{
-    width:45%;
-    float:left;
-    margin-left:5%
-}
-
-.my-skills .skills p{
-    margin-bottom:30px;
-}
-
-.my-skills .progress{margin-top:30px}
-
-.my-skills .progress > div h3{margin-bottom:15px;}
-
-.my-skills .progress > div > div{
-    height:30px;
-    background-color:#F2F2F2;
-}
-
-.my-skills .progress > div > div span{
-    display:block;
-    background-color:#2DCC70;
-    height:30px;
-    text-align:right;
-    color:white;
-    font-size:1.2em;
-    font-weight:bold;
-    line-height:30px /*line-height=height centers the element vertically*/
-    
-}
-
-.my-skills::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both;
-}
-/* End My Skills*/
-
-/* Start Resume */
-.resume{
-    text-align:center;
-    background-color:#F2F2F2;
-    padding-top:70px;
-    padding-bottom:70px;
-    position:relative;
-}
-
-.resume p{
-    text-align:center;
-    margin-bottom:30px;
-    padding:0 30px
-}
-
-/* To Make The Little Arrow */
-.resume .down{
-    background-color:#F2F2F2;
-    width:60px;
-    height:60px;
-    position:absolute;
-    top:88%;
-    left:50%;
-    z-index:-5;
-    transform:rotate(45deg); 
-}
-/* End Resume */
-
-/* Start Education */
-.my-education{
-    padding-top:30px;
-    padding-bottom:30px
+a:hover {
+	text-decoration: none;
 }
-.my-education .education,
-.my-education .diplomas{
-    width:45%;
-    float:left;
-    margin-left:5%;
-    margin-top:50px
-}
-
-.my-education .diplomas{
-    margin-top:120px
+h1, h2 {
+	font-family: 'Anton', sans-serif;
 }
-
-.my-education .diplomas > div{ margin-bottom:50px}
-
-.my-education .diplomas > div h4:nth-of-type(2)
-{
-    display:inline-block;
-    background-color:#26CA74;
-    margin:0;
-    padding:5px 10px;
-    color:white;
+h1 {
+	font-size: 70px;
 }
 
-.my-education .diplomas p{
-    padding-top:15px;
-    border-top:3px solid #F3F3F3
-}
-.my-education::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both;
+h2 {
+	font-size: 40px;
+	margin-top: 0;
 }
 
-/* End Education */ 
+h3 {
+	margin:0;
 
-/* Start Testimonials */
-.testimonials{
-    text-align:center;
-    background-color:#F2F2F2;
-    padding-top:80px;
-    padding-bottom:80px;
 }
 
-.testimonials q{
-    font-style:italic;
-    padding:0 30px;
-    font-size:1.2em;
-    text-align:center;
-    display:block;
-    margin-bottom:30px;
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding:60px 50px;
+	overflow:auto;
+	/*border: 1px solid red;*/
 }
 
-.testimonials h3{
-    font-size:1em
+.uppercase {
+	text-transform: uppercase;
 }
 
-/* to make the transition bullets*/
-.testimonials ul{list-style: none;padding-left:0;text-align:center;}
-
-.testimonials ul li{
-    width:10px;
-    height:10px;
-    border:1px solid #3FC177;
-    border-radius: 50%;
-    display:inline-block;
-    margin-right:10px;
-    cursor:pointer
+.btn {
+	text-decoration: none;
+	background-color:#EF233C;
+	color: white;
+	padding: 10px;
+	display: inline-block;
 }
-
-.testimonials ul li.active,
-.testimonials ul li:hover{background-color:#3FC177}
-
-.testimonials ul li:last-child{margin-right:0}
 
-.testimonials ul::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both
+section {
+	/*border: 3px solid green;*/
 }
-/* End Testimonials */
-
-/* Start Portfolio*/
-.portfolio{
-    text-align:center;
-    padding-top:60px;
-    padding-bottom:50px;
+/* Header & Footer
+------------------------------------*/
+header , footer {
+	background-color: #2B2D42  ;
+	color:#8D99AE;
 }
+/* header */
+.profile-img {
+	height:300px;
+	width: 300px;
+	border-radius: 50%;
+	/*min-width:250px;*/
 
-.portfolio p{
-    text-align:center;
-    margin-bottom:70px;
-    padding:0 30px
 }
-.portfolio .galerie > div{
-    width:33.333333%;
-    float:left;
-    margin-bottom:40px;
-}
 
-.portfolio .galerie > div img{
-    width:90%;
-    cursor:pointer;
+header {
+	padding-top: 50px;
+	position:relative;
 }
-
-.portfolio .galerie > div img:hover{
-    opacity:0.5;
+header h1, header h2 {
+	color:#EDF2F4 ;
+	margin:0;
 }
 
-.portfolio .galerie::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both;
+.download {
+	position:absolute;
+	bottom: 0;
+	right: 0;
 }
-
-/* End Portfolio*/
-
-/* Start Contact Me*/
-.contact-me{
-    padding-top:70px;
-    padding-bottom:70px;
-    background-color:#252F31;
+/* footer */
+footer {
+	text-align: center;
 }
-
-.contact-me .contact-info,
-.contact-me .contact-form{
-    width:45%;
-    float:left;
-    margin-left:5%
+.contact-info a {
+padding: 10px;
+display: inline-block;
 }
 
-.contact-me h2,
-.contact-me .contact-info span{color:white;font-weight:bold}
-
-.contact-me .contact-info p:nth-of-type(2){margin-top:50px}
-
-.contact-me .contact-form{
-    margin-top:30px;
-}
 
-.contact-me .contact-form label{
-    display:block;
-    color:#BBC0C3;
-    margin:20px 0;
-    font-size:1.1em;
-    font-weight:bold;
+/*Navigation*/
+nav {
+	text-align: center;
+	position: fixed;
+	top:0;
+	background-color: white;
+	width: 100%;
+	font-size: 0;
 }
 
-.contact-me .contact-form label span{color:#737B7E;}
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:#2B2D42;
+	transition: background-color 0.3s ease;
+	font-size: 16px;
 
-.contact-me .contact-form input[type="text"],.contact-me .contact-form textarea{
-    width:75%;
-    margin-right:0;
-    background-color:#4B5557;
-    border:none;
-    color:white;
 }
-
-.contact-me .contact-form input[type="text"]{
-    padding:10px 5px;
+nav a:hover {
+	background-color:#2B2D42;
+	color: white;
 }
 
-.contact-me .contact-form textarea{
-    height:200px;
-    padding:10px 5px
-}
+/* Work Experience
+------------------------------------*/
+.work {
+	background-color: #EDF2F4;
 
-.contact-me .contact-form input[type="submit"]{
-    color:white;
-    border:none;
-    background-color:#191E22;
-    margin-top:30px;
-    padding:15px 25px;
-    cursor:pointer;
 }
-
-.contact-me .contact-form input[type="submit"]:active{position:relative;top:2px;}
-.contact-me::after{
-    content:" ";
-    display:block;
-    visibility:hidden;
-    clear:both;
+h3 ~ p {
+	margin:0;
 }
-/* End Contact Me*/
-
-/* Start Footer*/
-.footer{
-    background-color:#191E22;
-    text-align:center;
-    padding:20px 0;
+.job-description {
+	margin-bottom: 25px;
 }
-
-.footer p{
-    text-align:center;
-    color:#4B5557;
-    text-transform:uppercase;
-    font-size:0.9em
+.job-description p:first-of-type {
+	margin-top:0;
 }
-
-.footer ul{list-style:none;margin-left:0}
 
-.footer ul li{
-    display:inline-block;
-    width:24px;
-    height:24px;
-    padding:3px;
-    background-color:#485355;
-    border-radius: 50%;
-    margin-right:8px;
-    cursor:pointer
-}
 
-.footer ul li img{
-    width:90%;
-    height:90%;
+/* Education
+------------------------------------*/
+.education {
+	background: linear-gradient(rgba(141, 153, 174, 0.8),
+                 rgba(141, 153, 174, 0.5)), url('http://res.cloudinary.com/titherr/image/upload/v1524105432/graduation.jpg') no-repeat fixed;
+	background-size: cover;
 }
 
-.footer ul li:hover{
-    background-color:#4B5356;
-    opacity:0.5
+p + h3 {
+	margin-top: 30px;
 }
 
-/* End Footer*/
-
-/* Start My FrameWork */
-.my-title{
-    color:#535456;
-    text-transform:uppercase;
-    margin-top:20px;
-    margin-bottom:30px;
-}
+/* Media Queries
+------------------------------------*/
 
-.snd-title{
-    text-transform:uppercase;
-    color:#515659;
-}
+@media (min-width: 900px) {
+	.col-narrow {
+	width: 37%;
+	float:left;
+	/* border: 1px solid black; */
+	/*min-height:225px;*/
+	}
+.col-wide{
+	width: 62%;
+	float:left;
+	padding-left:110px;
+	/*border: 1px solid black;*/
+	/*min-height:225px;*/
+	}
 
-p,q{
-    text-align:justify;
-    color:#ADADAD;
-    line-height:1.7
 }
 
-.green-btn{
-    background:none;
-    color:#3FC177;
-    text-transform:uppercase;
-    font-weight:bold;
-    padding:15px 25px;
-    border:3px solid #3FC177;
-    cursor:pointer;
+@media only screen and (max-width: 600px) { 
+  .profile-img {
+    display:none;
+  }
+  header {
+    text-align: center;
+    padding-top: 10px;
+  }
+ h2 {
+    text-align: center;
+  }
+  
+  nav {
+    display:none;
+  }
 }
 
-.green-btn:active{position:relative;top:2px;}
 
-h4{
-    color:#ADADAD;
-    text-transform:capitalize;
-}
+ 
 
-hr{
-    background-color:#E9E9E9;
-    margin-left:60px;
-    height:2px;
-    border:none;
-}
-/* End My FrameWork*/
   </style>
 <script>
   window.console = window.console || function(t) {};
@@ -565,283 +221,116 @@ hr{
 </script>
 </head>
 <body translate="no">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://use.fontawesome.com/bd138d87de.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connor Payne | Resume</title>
+<link href="https://fonts.googleapis.com/css?family=Anton|Spectral" rel="stylesheet">
+<link rel="stylesheet" href="_css/styles.css">
+</head>
+<body>
 
-<div class="header">
-
-<div class="slider">
-<div class="container">
-<div class="intro">
-<h1>web &amp; graphic designer</h1>
-<a href="#">learn more</a>
+<header id="about">
+<a href="resume.pdf" download class="btn download">Download PDF</a>
+<nav>
+<a href="#about">About</a>
+<a href="#work">Work Experience</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="content-wrap">
+<img class="profile-img col-narrow" src="https://res.cloudinary.com/titherr/image/upload/v1524105424/mesun1.png" alt="Connor Payne">
+<div class="col-wide">
+<h1>Connor Payne</h1>
+<h2>CSULB Student of Health Care Administration</h2>
+<p>As a student of healthcare since joining the Health Careers Academy in 2009, I have dedicated my efforts to improving the way that we deliver quality care to patients. With a passion for technology and innovation, I have taught myself various programming languages in order to bring my ideas to life. </p>
 </div>
 </div>
+</header>
+<main>
+
+<section id="work" class="work">
+<div class="content-wrap">
+<h2>Work Experience</h2>
+
+<div class="col-narrow">
+<h3>Intern (Health Information Management Department)</h3>
+<p class="uppercase">Los Alamitos Medical Center</p>
+<p>January 2018 to Present</p>
 </div>
 
-
-<div class="navbar">
-<div class="container">
-<h2>f</h2>
-<h2>fo<span>cal</span></h2>
+<div class="col-wide job-description">
+<p>Duties:</p>
 <ul>
-<li class="active"><a href="#">home</a></li>
-<li><a href="#">about me</a></li>
-<li><a href="#">skills</a></li>
-<li><a href="#">resume</a></li>
-<li><a href="#">testimonials</a></li>
-<li><a href="#">portfolio</a></li>
-<li><a href="#">contact me</a></li>
+<li>Providing cardiology department access to a physician portal for easy access to patient records</li>
+<li>Proficiency in Dragon Medical One cloud based speech recognition software</li>
+<li>Implementation of Lean Daily Management for quality assurance</li>
 </ul>
 </div>
+<div class="col-narrow">
+<h3>Admissions/ Weekend Manager</h3>
+<p class="uppercase">Roseville Point Healthcare Center </p>
+<p>October 2011 to January 2014</p>
 </div>
+<div class="col-wide job-description">
 
-</div>
-
-
-<div class="features">
-<div class="container">
-<div class="feat">
-<h2 class="my-title">values</h2>
-<p>Lorem ipsum dolor sit amet, primis epicuri ei sit, debet expetendis in eam, vel cu paulo democritum.</p>
-</div>
-<div class="feat">
-<h2 class="my-title">goales</h2>
-<p>Lorem ipsum dolor sit amet, primis epicuri ei sit, debet expetendis in eam, vel cu paulo democritum.</p>
-</div>
-<div class="feat">
-<h2 class="my-title">hobbies</h2>
-<p>Lorem ipsum dolor sit amet, primis epicuri ei sit, debet expetendis in eam, vel cu paulo democritum.</p>
-</div>
-</div>
-</div>
-
-
-<div class="about-me">
-<div class="container">
-<div class="image">
-</div>
-<div class="info">
-<h2 class="my-title">about me</h2>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis. Lacinia maecenas egestas feugiat ultricies et. Faucibus ligula at velit dui condimentum posuere eu eget mauris eu mollis adipiscing massa aenean. Nunc commodo elementum. Curabitur mauris nec ut rutrum nulla ultrices platea libero.
-</p>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.
-</p>
-<div class="work-field">
-<div>
-<div class="icon"></div>
-<h3 class="snd-title">web design</h3>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.</p>
-</div>
-<div>
-<div class="icon"></div>
-<h3 class="snd-title">graphic design</h3>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.</p>
-</div>
-<div>
-<div class="icon"></div>
-<h3 class="snd-title">online marketing</h3>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.</p>
-</div>
-<div>
-<div class="icon"></div>
-<h3 class="snd-title">seo</h3>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="my-skills">
-<div class="container">
-<div class="skills">
-<h2 class="my-title">my skills</h2>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis. Lacinia maecenas egestas feugiat ultricies et. Faucibus ligula at velit dui condimentum posuere eu eget mauris eu mollis adipiscing massa aenean. Nunc commodo elementum. Curabitur mauris nec ut rutrum nulla ultrices platea libero.
-</p>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.
-</p>
-<button class="green-btn">contact me</button>
-</div>
-<div class="progress">
-<div>
-<h3 class="snd-title">photoshop</h3>
-
-<div><span style="width:90%">90% &nbsp;</span></div>
-</div>
-<div>
-<h3 class="snd-title">illustrator</h3>
-<div><span style="width:80%">80% &nbsp;</span></div>
-</div>
-<div>
-<h3 class="snd-title">html/css</h3>
-<div><span style="width:90%">90% &nbsp;</span></div>
-</div>
-<div>
-<h3 class="snd-title">php/mysql</h3>
-<div><span style="width:70%">70% &nbsp;</span></div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="resume">
-<div class="container">
-<h2 class="my-title">resume</h2>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis.
-</p>
-<button class="green-btn">download resume</button>
-</div>
-<div class="down"></div>
-</div>
-
-
-<div class="my-education">
-<div class="container">
-
-<div class="education">
-<h2 class="my-title">my education</h2>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis.
-</p>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
-</p>
-</div>
-<div class="diplomas">
-<div>
-<h3 class="snd-title">graphic design diploma</h3>
-<h4>reeves college / june 2008 - may 2010</h4>
-<h4>4.0 GPA</h4>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
-</p>
-</div>
-<div>
-<h3 class="snd-title">cit diploma</h3>
-<h4>letherbridge college / june 2006 - may 2008</h4>
-<h4>4.0 GPA</h4>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
-</p>
-</div>
-</div>
-
-<div class="clearfix"></div>
-<hr>
-
-<div class="education">
-<h2 class="my-title">work experience</h2>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis.
-</p>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
-</p>
-</div>
-<div class="diplomas">
-<div>
-<h3 class="snd-title">lead web designer</h3>
-<h4>ABC company, Sakstone / june 2011 - Present</h4>
-<h4>3 years</h4>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
-</p>
-</div>
-<div>
-<h3 class="snd-title">junior desiner</h3>
-<h4>XYZ Company, letherbridge / june 2008 - may 2009</h4>
-<h4>1 years</h4>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
-</p>
-</div>
-<div>
-<h3 class="snd-title">web developer</h3>
-<h4>The Company, letherbridge / june 2007 - may 2008</h4>
-<h4>1 years</h4>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
-</p>
-</div>
-</div>
-
-</div>
-</div>
-
-
-<div class="testimonials">
-<div class="container">
-<q>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis. Lacinia maecenas mauris eu mollis adipiscing massa aenean.
-</q>
-<h3 class="snd-title">john stone</h3>
-
+<p>Duties:</p>
 <ul>
-<li></li>
-<li class="active"></li>
-<li></li>
-<li></li>
+<li>Conducted improvement plans with administrators to improve CMS rating from 3 stars to 5 stars in a two-year period</li>
+<li>Screening patient clinical documents and insurance prior to admission</li>
+<li>Maintained per patient day ratio to ensure regulatory and corporation standards are met</li>
 </ul>
 </div>
+<div class="col-narrow">
+<h3>Intern (Telemetry Department)</h3>
+<p class="uppercase">Kaiser Foundation Hospital </p>
+<p>January 2010 to June 2010</p>
+</div>
+
+<div class="col-wide job-description">
+<p>Duties:</p>
+<ul>
+<li>Job shadowing various departments while assisting with procedures and surgery preparation</li>
+<li>Providing exceptional care to patients in telemetry department</li>
+<li>Recording precise patient documentation of activities of daily living</li>
+</ul>
 </div>
 
 
-<div class="portfolio">
-<div class="container">
-<h2 class="my-title">portfolio</h2>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis.
-</p>
-<div class="galerie">
-<div><img src="http://www.tacostudio.com/images/taco-webdesign-studio-portfolio-thumbs11.jpg" /></div>
-<div><img src="https://12073-presscdn-0-17-pagely.netdna-ssl.com/wp-content/uploads/2015/10/execute.jpg" /></div>
-<div><img src="http://codexecutives.com/wp-content/uploads/2016/03/portfolio_9-500x500.jpg" /></div>
-<div><img src="http://www.medicalwebexperts.com/images/webdesign-01.030384690951ed66.jpg" /></div>
-<div><img src="http://cdn-x-uploads.designhill.com/featured_entries/1472037144468_2%20(7).jpg" /></div>
-<div><img src="https://3.imimg.com/data3/TJ/BQ/MY-18726979/digital-marketing-500x500.jpg" /></div>
-<div><img src="http://images.all-free-download.com/images/graphiclarge/mobile_social_app_interface_design_vector_581612.jpg" /></div>
-<div><img src="http://masseffectmedia.com/wp-content/uploads/2016/06/Prometheus-Web-500x500.jpg" /></div>
-<div><img src="https://images-workbench.99static.com/4hhnXRxEMPwsrJ8QP3IPSgwnNj0=/0x0:1440x1440/fit-in/500x500/filters:fill(white)/99designs-contests-attachments/58/58052/attachment_58052874" /></div>
 </div>
-</div>
+</section>
+
+<section id="education" class="education">
+<div class="content-wrap">
+<h2>Education</h2>
+
+<h3>California State University, Long Beach (2017 to 2018)</h3>
+<p>Bachelor of Science: Health Care Administration</p>
+<h3>freeCodeCamp (2017 to 2018)</h3>
+<p>Certification: Front-End Web Development</p>
 </div>
 
+</section>
+</main>
 
-<div class="contact-me">
-<div class="container">
+<footer id="contact">
+<div class="content-wrap">
+<h2>Let's Keep in Touch!</h2>
+
 <div class="contact-info">
-<h2 class="my-title">contact me</h2>
-<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante.
-</p>
-<p>122 33rd Street East<br />
-Sakstown, Sk<br />
-S7k 1R9
-</p>
-<p><span>Email: &nbsp;&nbsp;</span> info@focal.com</p>
-<p><span>Phone: &nbsp;&nbsp;</span> 1-306-333-2323</p>
-</div>
-<div class="contact-form">
-<form name="contact">
-<label>Name <span>*</span></label>
-<input type="text" name="name" />
-<br>
-<label>Email Adress <span>*</span></label>
-<input type="text" name="name" />
-<br>
-<label>Your Message</label>
-<textarea></textarea>
-<br>
-<input type="submit" value="Contact Me" />
-</form>
-</div>
-</div>
-</div>
+<a href="mailto:iconnorpayne@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 
 
-<div class="footer">
-<div class="container">
-<p>copyright &copy; 2017 focal - built with passion</p>
-<ul>
-<li><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/03-twitter-128.png" alt="twiter" /></li>
-<li><img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/social-facebook-128.png" alt="facebook" /></li>
-<li><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/33-pinterest-128.png" alt="pinterest" /></li>
-<li><img src="https://cdn1.iconfinder.com/data/icons/social-signature/512/Linkedin_Solid-128.png" alt="linkedin" /></li>
-<li><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/40-google-plus-128.png" alt="googleplus" /></li>
-</ul>
-</div>
-</div>
+<a href="https://www.linkedin.com/in/connorpaynehca/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 
+</div>
+</div>
+<p>Copyright 2018 by Connor Payne</p>
+</footer>
 </body>
 </html>
- 
-
+</body>
+</html>
