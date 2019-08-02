@@ -1,4 +1,4 @@
-  
+ 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,94 +6,554 @@
 <meta charset="UTF-8">
 <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<title>Ashwith pinto - Portfolio Page</title>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<title>CodePen - template copy-focal</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
 <style>
-    @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,800);
+    /* Start Main Rules */
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-.top{
-  font-size: 80px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-}
-.top2{
-  color: grey;  
-  font-size: 30px;
-  padding-left: 10px;
-  font-family: 'Inconsolata', serif;
-}
-.top3{
-  color: grey;  
-  font-size: 20px;
-  
-  font-family: 'Inconsolata', serif;
-}
-.headshot{
-  width: 400px;
-  height: 500px;
-  border-radius: 2000px;
-  }
-.heading{
-  padding-top: 30px;
-  padding-bottom: 10px;  
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+body{
+    font-family:"Lato",sans-serif;
+    height:4000px;
 }
 
-.about{
-  font-size: 28px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  
+.container{
+    width:1170px;/*for medium size screens*/
+    margin:auto;
 }
-.project{
-  padding-bottom: 20px;  
+
+.clearfix{
+    clear:both;
 }
-#projects{
-  width: 275px;
-  height: 200px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+
+/* End Main Rules */
+
+/* Start Header */
+
+/* Start Slider */
+
+.header .slider {
+  background:url("https://wallpaperscraft.com/image/ipad_iphone_pens_notepads_coffee_starbucks_83901_1280x900.jpg") no-repeat center center;
+    -webkit-background-size:cover;/* CSS3 */
+    -moz-background-size:cover;/* CSS3 */
+    -o-background-size:cover;/* CSS3 */
+    padding-top:250px;
+    padding-bottom:250px;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
 }
-.edImg{
-  width: 200px;
-  height: 200px;
+
+.header .slider h1{
+    font-size:3em;
+    margin:0;
+    display:inline-block;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:3px solid white;
+    border-bottom:3px solid white;
 }
-.edu{
-  font-size: 18px;  
-  padding-right: 10px;  
-  color: grey;
+
+.header .slider a{
+    display:block;
+    padding:10px 20px;
+    border:3px solid white;
+    width:140px;
+    margin:40px auto 0;
+    font-size:1.2em;
 }
-.edu1{
-  font-size: 18px;
-  padding-bottom: 0;
-  padding-top: 10px;
-  font-style: italic;
-  color: grey;
+
+.header .slider a:active{position:relative;top:1px}
+/* End Slider */
+
+/* Start NavBar */
+.header .navbar {
+    background-color:#252F31;
+    color:white;
+    text-transform:uppercase;
 }
-.uda{
-  padding-right: 20px;
+
+.header .navbar h2:first-of-type{
+    background-color:#4A4F53;
+    padding:0 10px;
+    margin-right: 20px;
 }
-.pro{
-  padding-left: 40px;  
+.header .navbar h2{ float:left}
+
+.header .navbar h2 span{color:#3FC177;}
+
+.header .navbar ul{
+    list-style-type:none;
+    float:right;
 }
-.icon{ 
-  width: 75px;
-  height: 75px;
-  display: inline-block;
+
+.header .navbar ul li{
+    float:left;
+    padding:10px;
+    font-weight:bold;
 }
-.icon-group{
-  padding-top: 20px;
-  padding-left: 450px;
- 
+
+.header .navbar ul li:last-child{padding-right:0}
+
+.header a{color:white;text-decoration:none}
+
+.header .navbar a:hover,
+.header .navbar ul li.active a{color:#3FC177;}
+
+.header .navbar::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both
 }
-.pro-heading{
-  padding-top: 10px;
-  padding-bottom: 10px;  
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+/* End NavBar */
+/* End Header */
+
+/* Start Features */
+.features {
+    padding-top:40px;
+    padding-bottom:50px;    
 }
+.features .feat{
+    float:left;
+    width:31.33333%;
+    margin-right:3%;
+}
+
+.features .container div:last-child{margin-right:0;}
+
+.features::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+/* End Features */
+
+/* Start About Me */
+
+.about-me  {
+    background-color:#F2F2F2;
+}
+
+.about-me .image{
+    background:url('https://wallpaperscraft.com/image/macaulay_culkin_actor_star_musician_rock_92893_2820x1920.jpg') no-repeat;
+    width:40%;
+    height:735px;
+    background-size:cover;
+    float:left;
+}
+
+.about-me .info{
+    width:55%;
+    float:left;
+    margin-left:5%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.about-me .info .work-field > div{
+    width:40%;
+    float:left;
+    margin-left:60px;
+    position:relative
+}
+
+.about-me .info .work-field > div .icon{
+    width:35px;
+    height:35px;
+    position:absolute;
+    top:20px;
+    left:-50px;
+}
+
+.about-me .info .work-field >div:nth-child(1) .icon{  
+    background:url("https://cdn3.iconfinder.com/data/icons/faticons/32/globe-01-128.png");
+    background-size:cover; 
+}
+
+.about-me .info .work-field >div:nth-child(2) .icon{  
+    background:url("https://cdn4.iconfinder.com/data/icons/developer-set-3/128/edit-128.png");
+    background-size:cover; 
+}
+
+.about-me .info .work-field >div:nth-child(3) .icon{  
+    background:url("https://cdn0.iconfinder.com/data/icons/news-and-magazine/512/statistic-128.png");
+    background-size:cover; 
+}
+
+.about-me .info .work-field >div:last-child .icon{  
+    background:url("https://cdn4.iconfinder.com/data/icons/thefreeforty/30/thefreeforty_target-128.png");
+    background-size:cover; 
+}
+
+
+/* ClearFix Of The fields floating */
+.about-me .info .work-field::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+
+/* Clear Fix Of The image and info floating*/
+.about-me::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+/* End About Me */
+
+
+/* Start My Skills*/
+.my-skills{
+    padding-top:30px;
+    padding-bottom:50px;
+}
+
+.my-skills .skills,
+.my-skills .progress{
+    width:45%;
+    float:left;
+    margin-left:5%
+}
+
+.my-skills .skills p{
+    margin-bottom:30px;
+}
+
+.my-skills .progress{margin-top:30px}
+
+.my-skills .progress > div h3{margin-bottom:15px;}
+
+.my-skills .progress > div > div{
+    height:30px;
+    background-color:#F2F2F2;
+}
+
+.my-skills .progress > div > div span{
+    display:block;
+    background-color:#2DCC70;
+    height:30px;
+    text-align:right;
+    color:white;
+    font-size:1.2em;
+    font-weight:bold;
+    line-height:30px /*line-height=height centers the element vertically*/
+    
+}
+
+.my-skills::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+/* End My Skills*/
+
+/* Start Resume */
+.resume{
+    text-align:center;
+    background-color:#F2F2F2;
+    padding-top:70px;
+    padding-bottom:70px;
+    position:relative;
+}
+
+.resume p{
+    text-align:center;
+    margin-bottom:30px;
+    padding:0 30px
+}
+
+/* To Make The Little Arrow */
+.resume .down{
+    background-color:#F2F2F2;
+    width:60px;
+    height:60px;
+    position:absolute;
+    top:88%;
+    left:50%;
+    z-index:-5;
+    transform:rotate(45deg); 
+}
+/* End Resume */
+
+/* Start Education */
+.my-education{
+    padding-top:30px;
+    padding-bottom:30px
+}
+.my-education .education,
+.my-education .diplomas{
+    width:45%;
+    float:left;
+    margin-left:5%;
+    margin-top:50px
+}
+
+.my-education .diplomas{
+    margin-top:120px
+}
+
+.my-education .diplomas > div{ margin-bottom:50px}
+
+.my-education .diplomas > div h4:nth-of-type(2)
+{
+    display:inline-block;
+    background-color:#26CA74;
+    margin:0;
+    padding:5px 10px;
+    color:white;
+}
+
+.my-education .diplomas p{
+    padding-top:15px;
+    border-top:3px solid #F3F3F3
+}
+.my-education::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+
+/* End Education */ 
+
+/* Start Testimonials */
+.testimonials{
+    text-align:center;
+    background-color:#F2F2F2;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+.testimonials q{
+    font-style:italic;
+    padding:0 30px;
+    font-size:1.2em;
+    text-align:center;
+    display:block;
+    margin-bottom:30px;
+}
+
+.testimonials h3{
+    font-size:1em
+}
+
+/* to make the transition bullets*/
+.testimonials ul{list-style: none;padding-left:0;text-align:center;}
+
+.testimonials ul li{
+    width:10px;
+    height:10px;
+    border:1px solid #3FC177;
+    border-radius: 50%;
+    display:inline-block;
+    margin-right:10px;
+    cursor:pointer
+}
+
+.testimonials ul li.active,
+.testimonials ul li:hover{background-color:#3FC177}
+
+.testimonials ul li:last-child{margin-right:0}
+
+.testimonials ul::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both
+}
+/* End Testimonials */
+
+/* Start Portfolio*/
+.portfolio{
+    text-align:center;
+    padding-top:60px;
+    padding-bottom:50px;
+}
+
+.portfolio p{
+    text-align:center;
+    margin-bottom:70px;
+    padding:0 30px
+}
+.portfolio .galerie > div{
+    width:33.333333%;
+    float:left;
+    margin-bottom:40px;
+}
+
+.portfolio .galerie > div img{
+    width:90%;
+    cursor:pointer;
+}
+
+.portfolio .galerie > div img:hover{
+    opacity:0.5;
+}
+
+.portfolio .galerie::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+
+/* End Portfolio*/
+
+/* Start Contact Me*/
+.contact-me{
+    padding-top:70px;
+    padding-bottom:70px;
+    background-color:#252F31;
+}
+
+.contact-me .contact-info,
+.contact-me .contact-form{
+    width:45%;
+    float:left;
+    margin-left:5%
+}
+
+.contact-me h2,
+.contact-me .contact-info span{color:white;font-weight:bold}
+
+.contact-me .contact-info p:nth-of-type(2){margin-top:50px}
+
+.contact-me .contact-form{
+    margin-top:30px;
+}
+
+.contact-me .contact-form label{
+    display:block;
+    color:#BBC0C3;
+    margin:20px 0;
+    font-size:1.1em;
+    font-weight:bold;
+}
+
+.contact-me .contact-form label span{color:#737B7E;}
+
+.contact-me .contact-form input[type="text"],.contact-me .contact-form textarea{
+    width:75%;
+    margin-right:0;
+    background-color:#4B5557;
+    border:none;
+    color:white;
+}
+
+.contact-me .contact-form input[type="text"]{
+    padding:10px 5px;
+}
+
+.contact-me .contact-form textarea{
+    height:200px;
+    padding:10px 5px
+}
+
+.contact-me .contact-form input[type="submit"]{
+    color:white;
+    border:none;
+    background-color:#191E22;
+    margin-top:30px;
+    padding:15px 25px;
+    cursor:pointer;
+}
+
+.contact-me .contact-form input[type="submit"]:active{position:relative;top:2px;}
+.contact-me::after{
+    content:" ";
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+/* End Contact Me*/
+
+/* Start Footer*/
+.footer{
+    background-color:#191E22;
+    text-align:center;
+    padding:20px 0;
+}
+
+.footer p{
+    text-align:center;
+    color:#4B5557;
+    text-transform:uppercase;
+    font-size:0.9em
+}
+
+.footer ul{list-style:none;margin-left:0}
+
+.footer ul li{
+    display:inline-block;
+    width:24px;
+    height:24px;
+    padding:3px;
+    background-color:#485355;
+    border-radius: 50%;
+    margin-right:8px;
+    cursor:pointer
+}
+
+.footer ul li img{
+    width:90%;
+    height:90%;
+}
+
+.footer ul li:hover{
+    background-color:#4B5356;
+    opacity:0.5
+}
+
+/* End Footer*/
+
+/* Start My FrameWork */
+.my-title{
+    color:#535456;
+    text-transform:uppercase;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.snd-title{
+    text-transform:uppercase;
+    color:#515659;
+}
+
+p,q{
+    text-align:justify;
+    color:#ADADAD;
+    line-height:1.7
+}
+
+.green-btn{
+    background:none;
+    color:#3FC177;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:15px 25px;
+    border:3px solid #3FC177;
+    cursor:pointer;
+}
+
+.green-btn:active{position:relative;top:2px;}
+
+h4{
+    color:#ADADAD;
+    text-transform:capitalize;
+}
+
+hr{
+    background-color:#E9E9E9;
+    margin-left:60px;
+    height:2px;
+    border:none;
+}
+/* End My FrameWork*/
   </style>
 <script>
   window.console = window.console || function(t) {};
@@ -105,155 +565,283 @@
 </script>
 </head>
 <body translate="no">
+
+<div class="header">
+
+<div class="slider">
+<div class="container">
+<div class="intro">
+<h1>web &amp; graphic designer</h1>
+<a href="#">learn more</a>
+</div>
+</div>
+</div>
+
+
+<div class="navbar">
+<div class="container">
+<h2>f</h2>
+<h2>fo<span>cal</span></h2>
+<ul>
+<li class="active"><a href="#">home</a></li>
+<li><a href="#">about me</a></li>
+<li><a href="#">skills</a></li>
+<li><a href="#">resume</a></li>
+<li><a href="#">testimonials</a></li>
+<li><a href="#">portfolio</a></li>
+<li><a href="#">contact me</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+
+<div class="features">
+<div class="container">
+<div class="feat">
+<h2 class="my-title">values</h2>
+<p>Lorem ipsum dolor sit amet, primis epicuri ei sit, debet expetendis in eam, vel cu paulo democritum.</p>
+</div>
+<div class="feat">
+<h2 class="my-title">goales</h2>
+<p>Lorem ipsum dolor sit amet, primis epicuri ei sit, debet expetendis in eam, vel cu paulo democritum.</p>
+</div>
+<div class="feat">
+<h2 class="my-title">hobbies</h2>
+<p>Lorem ipsum dolor sit amet, primis epicuri ei sit, debet expetendis in eam, vel cu paulo democritum.</p>
+</div>
+</div>
+</div>
+
+
+<div class="about-me">
+<div class="container">
+<div class="image">
+</div>
+<div class="info">
+<h2 class="my-title">about me</h2>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis. Lacinia maecenas egestas feugiat ultricies et. Faucibus ligula at velit dui condimentum posuere eu eget mauris eu mollis adipiscing massa aenean. Nunc commodo elementum. Curabitur mauris nec ut rutrum nulla ultrices platea libero.
+</p>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.
+</p>
+<div class="work-field">
+<div>
+<div class="icon"></div>
+<h3 class="snd-title">web design</h3>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.</p>
+</div>
+<div>
+<div class="icon"></div>
+<h3 class="snd-title">graphic design</h3>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.</p>
+</div>
+<div>
+<div class="icon"></div>
+<h3 class="snd-title">online marketing</h3>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.</p>
+</div>
+<div>
+<div class="icon"></div>
+<h3 class="snd-title">seo</h3>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="my-skills">
+<div class="container">
+<div class="skills">
+<h2 class="my-title">my skills</h2>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis. Lacinia maecenas egestas feugiat ultricies et. Faucibus ligula at velit dui condimentum posuere eu eget mauris eu mollis adipiscing massa aenean. Nunc commodo elementum. Curabitur mauris nec ut rutrum nulla ultrices platea libero.
+</p>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus.
+</p>
+<button class="green-btn">contact me</button>
+</div>
+<div class="progress">
+<div>
+<h3 class="snd-title">photoshop</h3>
+
+<div><span style="width:90%">90% &nbsp;</span></div>
+</div>
+<div>
+<h3 class="snd-title">illustrator</h3>
+<div><span style="width:80%">80% &nbsp;</span></div>
+</div>
+<div>
+<h3 class="snd-title">html/css</h3>
+<div><span style="width:90%">90% &nbsp;</span></div>
+</div>
+<div>
+<h3 class="snd-title">php/mysql</h3>
+<div><span style="width:70%">70% &nbsp;</span></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="resume">
+<div class="container">
+<h2 class="my-title">resume</h2>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis.
+</p>
+<button class="green-btn">download resume</button>
+</div>
+<div class="down"></div>
+</div>
+
+
+<div class="my-education">
 <div class="container">
 
-<div class="row">
-<div class="col-xs-12 col-md-12 center-block">
-<h1 class="top text-center ">Ashwith Pinto</h1>
-<p class="top2 text-center ">Computer Engineering</p>
+<div class="education">
+<h2 class="my-title">my education</h2>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis.
+</p>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
+</p>
 </div>
+<div class="diplomas">
+<div>
+<h3 class="snd-title">graphic design diploma</h3>
+<h4>reeves college / june 2008 - may 2010</h4>
+<h4>4.0 GPA</h4>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
+</p>
 </div>
-<hr />
-<div class="row">
-<div class="col-xs-12 col-md-12">
-<img class="headshot img-responsive center-block" src="photos.google.com/photo/AF1QipOw1PDq-5CdV52Ksbeq9Z-jeRIQrvDuFN2Phu0A" alt="headshot" />
-</div>
-</div>
-<div class="row center-block">
-<div class="col-xs-12 col-md-12">
-<h1 class="heading text-center">About</h1>
-<hr />
-<p class="about text-center">I am a self-motivated, hard-working web developer looking to use my knowledge in web development to further my career in the field. My experience as a cook has taught me to work quickly and efficiently while paying close attention to detail. I believe these skills among others have transitioned well into my career as a web developer.</p>
-</div>
-</div>
-
-<div id="education" class="row center-block">
-<h1 class="heading text-center">Education</h1>
-<hr />
-<div class="col-xs-3 col-md-6">
-<img class="img-responsive  center-block edImg" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXNLaNO5FvrGsXV6gqwZti-YYy0ZRePOeHZvMUzJKiRY1r370x" alt="" />
-<h3 class="text-center">SFS high school</h3>
-<p class="text-center edu1">Student</p>
-<p class="text-center edu">2006 - 2014</p>
-</div>
-<div class="col-xs-3 col-md-6">
-<img class="img-responsive center-block edImg" src="https://i0.wp.com/blog.udacity.com/wp-content/uploads/2016/02/U_360x360px.jpg" alt="" />
-<h3 class="text-center uda">St.sebastian pu collage</h3>
-<p class="text-center edu1">Student</p>
-<p class="text-center edu">2014 - 2016</p>
-</div>
-<div class="col-xs-3 col-md-6">
-<img class="img-responsive  center-block edImg" src="https://res.cloudinary.com/chrisshields88/image/upload/v1461429807/maloneDodge_g9fwg6.jpg" alt="" />
-<h3 class="text-center">Alvas institute of engineering and technology</h3>
-<p class="text-center edu1">B.E Computer science</p>
-<p class="text-center edu">2016 - present</p>
-</div>
-
-<div class="row" id="progressBars">
-<h1 id="skills" class="col-xs-6 col-md-12 heading text-center">Skills</h1>
-<hr />
-<h3 class="top2">HTML5</h3>
-<div class="progress">
-<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-</div>
-</div>
-<h3 class="top2">CSS3</h3>
-<div class="progress">
-<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-</div>
-</div>
-<h3 class="top2">JavaScript</h3>
-<div class="progress">
-<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-</div>
-</div>
-<h3 class="top2">jQuery</h3>
-<div class="progress">
-<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-</div>
-</div>
-<h3 class="top2">KnockoutJS</h3>
-<div class="progress">
-<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-</div>
-</div>
-<h3 class="top2">Web Design</h3>
-<div class="progress">
-<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-</div>
-</div>
-<h3 class="top2">Photoshop</h3>
-<div class="progress">
-<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-</div>
+<div>
+<h3 class="snd-title">cit diploma</h3>
+<h4>letherbridge college / june 2006 - may 2008</h4>
+<h4>4.0 GPA</h4>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
+</p>
 </div>
 </div>
 
-<div class="row center-block">
-<div class="col-xs-12 project">
-<h1 class="heading text-center">Projects</h1>
-<hr />
+<div class="clearfix"></div>
+<hr>
+
+<div class="education">
+<h2 class="my-title">work experience</h2>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis.
+</p>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
+</p>
 </div>
-<div class="col-xs-4 pro">
-<img id="projects" src="https://res.cloudinary.com/chrisshields88/image/upload/c_scale,h_300,w_400/v1461455485/portfolio_zbogkv.png">
-<h3 class="text-center pro-heading">Portfolio Mock-Up</h3>
-<p class="top3 text-center">HTML | CSS | Bootstrap</p>
-<p class="top3 text-center">For this project I developed a personal portfolio page using HTML, CSS, and the Bootstrap framework. The page is fully responsive and works on mobile, tablet, and desktop browsers.</p>
+<div class="diplomas">
+<div>
+<h3 class="snd-title">lead web designer</h3>
+<h4>ABC company, Sakstone / june 2011 - Present</h4>
+<h4>3 years</h4>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
+</p>
 </div>
-<div class="col-xs-4 pro">
-<img id="projects" class="center-block" src="https://res.cloudinary.com/chrisshields88/image/upload/c_scale,h_300,w_400/v1461455486/resume_tpupbl.png">
-<h3 class="text-center pro-heading">Online Resume</h3>
-<p class="top3 text-center">HTML | CSS | JavaScript | jQuery</p>
-<p class="top3 text-center">Using jQuery, I developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS.</p>
+<div>
+<h3 class="snd-title">junior desiner</h3>
+<h4>XYZ Company, letherbridge / june 2008 - may 2009</h4>
+<h4>1 years</h4>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
+</p>
 </div>
-<div class="col-xs-4 pro">
-<img id="projects" class="center-block" src="https://res.cloudinary.com/chrisshields88/image/upload/c_scale,h_300,w_400/v1461456043/frogger_kyjv8j.png">
-<h3 class="text-center pro-heading">Arcade Game</h3>
-<p class="top3 text-center">HTML5 Canvas | Object-Oriented Programming | JavaScript</p>
-<p class="top3 text-center">For this project I created an HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.</p>
-</div>
-</div>
-<br />
-<div class="row center-block">
-<div class="col-xs-2 col-md-4 pro ">
-<img id="projects" class="center-block" src="https://res.cloudinary.com/chrisshields88/image/upload/c_scale,h_300,w_400/v1461455484/web_optimization_otktn6.png">
-<h3 class="text-center pro-heading">Web Optimization</h3>
-<p class="top3 text-center">Chrome Developer Tools | Critical Rendering Path | CSS | HTML | 60 FPS Rendering | Gulp</p>
-<p class="top3 text-center">For this project I optimized Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.</p>
-</div>
-<div class="col-xs-2 col-md-4 pro ">
-<img id="projects" class="center-block" src="https://res.cloudinary.com/chrisshields88/image/upload/c_scale,h_300,w_400/v1461455485/neighborhoodMap_nom0tp.png">
-<h3 class="text-center pro-heading">Neighborhood Map</h3>
-<p class="top3 text-center">HTML | CSS | JavaScript | KnockoutJS | AJAX |</p>
-<p class="top3 text-center">For this project I developed A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Wikipedia API.</p>
-</div>
-<div class="col-xs-2 col-md-4 pro ">
-<img id="projects" src="https://res.cloudinary.com/chrisshields88/image/upload/c_scale,h_300,w_400/v1461459500/screenshot_pp7ilx.png">
-<h3 class="text-center pro-heading">Feed Reader Testing</h3>
-<p class="top3 text-center">JavaScript | Jasmine | JavaScript Testing Frameworks</p>
-<p class="top3 text-center">For this project I wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API.</p>
-</div>
-</div>
-<hr />
-<div class="row center-block">
-<div class="col-xs-12 col-md-12 icon-group">
-<a href="https://www.linkedin.com/in/ashwith-pinto-8a535a153/"><img src="https://image.freepik.com/free-icon/linkedin-logo-button_318-84979.jpg" class="icon center-block" alt="" /></a>
-<a href="https://github.com/Ashwithpinto"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTs_993TBaJa6TNRVdF1S7kzyjMgs2BaXeRgcHez8fu1vB1QuY" class="icon center-block" alt="" /></a>
-<a href=""><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245602/profile/profile-512_1.jpg" class="icon center-block" alt="" /></a>
-</div>
-</div>
-<div class="row center-block"></div>
-<div class="col-xs-12 col-md-12 text-center">
-<footer>
-&copy; 2016 Ashwith Pinto
-</footer>
+<div>
+<h3 class="snd-title">web developer</h3>
+<h4>The Company, letherbridge / june 2007 - may 2008</h4>
+<h4>1 years</h4>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam.
+</p>
 </div>
 </div>
 
-<script src="jquery-2.2.3.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+</div>
+</div>
+
+
+<div class="testimonials">
+<div class="container">
+<q>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis. Lacinia maecenas mauris eu mollis adipiscing massa aenean.
+</q>
+<h3 class="snd-title">john stone</h3>
+
+<ul>
+<li></li>
+<li class="active"></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+<div class="portfolio">
+<div class="container">
+<h2 class="my-title">portfolio</h2>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante. Arcu quisque ligula. Ut metus eleifend sagittis blandit quis.
+</p>
+<div class="galerie">
+<div><img src="http://www.tacostudio.com/images/taco-webdesign-studio-portfolio-thumbs11.jpg" /></div>
+<div><img src="https://12073-presscdn-0-17-pagely.netdna-ssl.com/wp-content/uploads/2015/10/execute.jpg" /></div>
+<div><img src="http://codexecutives.com/wp-content/uploads/2016/03/portfolio_9-500x500.jpg" /></div>
+<div><img src="http://www.medicalwebexperts.com/images/webdesign-01.030384690951ed66.jpg" /></div>
+<div><img src="http://cdn-x-uploads.designhill.com/featured_entries/1472037144468_2%20(7).jpg" /></div>
+<div><img src="https://3.imimg.com/data3/TJ/BQ/MY-18726979/digital-marketing-500x500.jpg" /></div>
+<div><img src="http://images.all-free-download.com/images/graphiclarge/mobile_social_app_interface_design_vector_581612.jpg" /></div>
+<div><img src="http://masseffectmedia.com/wp-content/uploads/2016/06/Prometheus-Web-500x500.jpg" /></div>
+<div><img src="https://images-workbench.99static.com/4hhnXRxEMPwsrJ8QP3IPSgwnNj0=/0x0:1440x1440/fit-in/500x500/filters:fill(white)/99designs-contests-attachments/58/58052/attachment_58052874" /></div>
+</div>
+</div>
+</div>
+
+
+<div class="contact-me">
+<div class="container">
+<div class="contact-info">
+<h2 class="my-title">contact me</h2>
+<p>Lorem ipsum dolor sit amet nunc. Magnis nec venenatis. Vivamus arcu sollicitudin. Commodo lectus quam. Sodales velit metus. Consectetuer maecenas et voluptas iaculis ante.
+</p>
+<p>122 33rd Street East<br />
+Sakstown, Sk<br />
+S7k 1R9
+</p>
+<p><span>Email: &nbsp;&nbsp;</span> info@focal.com</p>
+<p><span>Phone: &nbsp;&nbsp;</span> 1-306-333-2323</p>
+</div>
+<div class="contact-form">
+<form name="contact">
+<label>Name <span>*</span></label>
+<input type="text" name="name" />
+<br>
+<label>Email Adress <span>*</span></label>
+<input type="text" name="name" />
+<br>
+<label>Your Message</label>
+<textarea></textarea>
+<br>
+<input type="submit" value="Contact Me" />
+</form>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+<div class="container">
+<p>copyright &copy; 2017 focal - built with passion</p>
+<ul>
+<li><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/03-twitter-128.png" alt="twiter" /></li>
+<li><img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/social-facebook-128.png" alt="facebook" /></li>
+<li><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/33-pinterest-128.png" alt="pinterest" /></li>
+<li><img src="https://cdn1.iconfinder.com/data/icons/social-signature/512/Linkedin_Solid-128.png" alt="linkedin" /></li>
+<li><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/40-google-plus-128.png" alt="googleplus" /></li>
+</ul>
+</div>
+</div>
+
 </body>
 </html>
-<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-</body>
-</html>
+ 
+
