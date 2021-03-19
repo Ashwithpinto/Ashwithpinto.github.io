@@ -234,31 +234,16 @@ p + h3 {
 	 
     
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1C9E8XH19"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('set',
-      {
-        'custom_map':
-        {
-          'dimension1': 'user_id',
-          'dimension2': 'email',
-          'dimension3': 'page',
-        }
-      });
-      gtag('set', 'user_properties', {
-        'user_id':'{{ session()->get('user_id') }}',
-        'email' : '{{ session()->get('email') }}',
-      });
 
-  gtag('config', 'G-Y1C9E8XH19',{
-       'user_id':'{{ session()->get('user_id') }}',
-          'email' : '{{ session()->get('email') }}',
-          'page' : 'Ashwith'
-      });
-  });
+  gtag('config', 'G-Y1C9E8XH19');
+</script>
 
 </head>
 <body>
